@@ -10,7 +10,7 @@
     <form method="POST" action="/about">
         
         {% if data.name %}
-            <h1>Hello {{ data.name }}</h1>
+            <h1>Hello {{ data.name.title() }}</h1>
         {% else %}
             <p>Hello </p>
             <h2>{{data}}</h2>
